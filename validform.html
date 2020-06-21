@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<title>
+    VALIDAION FORM
+</title>
+
+<head>
+    
+
+</head>
+
+<body bgcolor="orange">
+    <form action="ArrayMap.html" onsubmit="return validateForm()">
+        <table align="center">
+            <tr>
+                <td>User Name</td>
+                <td><input type="text" id="uname"></td>
+            </tr>
+            <tr>
+                <td>User Pass</td>
+                <td><input type="text" id="upass"></td>
+            </tr>
+            <tr>
+                <td><button type="submit">click</button></td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script>
+         
+         
+    function validateForm()
+    {
+        var una = document.getElementsById("uname").value();
+        var upwd = document.getElementsById("upass").value();
+        var str = una.trim();
+        var str1 = upwd.trim();
+
+
+  if (str == ""||str1 == "") {
+    alert("Name must be filled out");
+       return false;
+   }
+   else
+   {
+       true;
+   }
+    }
+</script>
+
+</html>
